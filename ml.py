@@ -24,8 +24,18 @@ import numpy as np
 # print("Array b after modifying d: {}".format(repr(b)))
 
 #Casting method
-arr = np.array([4, 2])
-print(arr.dtype)
+# arr = np.array([4, 2])
+# print(arr.dtype)
 
-arr = arr.astype(np.float32)
-print(arr.dtype)
+# arr = arr.astype(np.float32)
+# print(arr.dtype)
+
+#NAN method
+arr = np.array([np.nan, 1, 3])
+print(repr(arr))
+
+arr = np.array([np.nan, 'bba'])
+print(repr(arr))
+
+np.array([np.nan, 1, 2], dtype=np.float32)
+# np.array([np.nan, 3, 2], dtype=np.int32) #uncommenting this line will break the code
