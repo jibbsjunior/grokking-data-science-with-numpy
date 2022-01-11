@@ -1,6 +1,6 @@
 import numpy as np
 
 
-arr1 = np.array([-2, 4, 5], dtype=np.float32)
+arr1 = np.array([-2, 4, 5])
 
-print(repr(arr1))
+print(arr1)
