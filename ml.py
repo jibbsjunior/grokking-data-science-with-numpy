@@ -12,13 +12,20 @@ import numpy as np
 # print(repr(arr))
 
 #Copy method
-a = np.array([4, 2])
-b = np.array([3, 6])
-c = a
-print("Array a: {}".format(repr(a)))
-c[0] = 8
-print("Array a after modifying c: {}".format(repr(a)))
+# a = np.array([4, 2])
+# b = np.array([3, 6])
+# c = a
+# print("Array a: {}".format(repr(a)))
+# c[0] = 8
+# print("Array a after modifying c: {}".format(repr(a)))
 
-d = b.copy()
-d[0] = 9
-print("Array b after modifying d: {}".format(repr(b)))
+# d = b.copy()
+# d[0] = 9
+# print("Array b after modifying d: {}".format(repr(b)))
+
+#Casting method
+arr = np.array([4, 2])
+print(arr.dtype)
+
+arr = arr.astype(np.float32)
+print(arr.dtype)
