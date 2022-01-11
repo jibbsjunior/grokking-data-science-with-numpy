@@ -31,11 +31,23 @@ import numpy as np
 # print(arr.dtype)
 
 #NAN method
-arr = np.array([np.nan, 1, 3])
-print(repr(arr))
+# arr = np.array([np.nan, 1, 3])
+# print(repr(arr))
 
-arr = np.array([np.nan, 'bba'])
-print(repr(arr))
+# arr = np.array([np.nan, 'bba'])
+# print(repr(arr))
 
-np.array([np.nan, 1, 2], dtype=np.float32)
+# np.array([np.nan, 1, 2], dtype=np.float32)
 # np.array([np.nan, 3, 2], dtype=np.int32) #uncommenting this line will break the code
+
+#Infinity method
+print(np.inf > 100000)
+
+arr = np.array([np.inf, 5])
+print(repr(arr))
+
+arr = np.array([-np.inf, 2])
+print(repr(arr))
+
+np.array([np.inf, 3], dtype=np.float32)
+# np.array([np.inf, 2], dtype=np.int32) #uncommenting this line will break the code
