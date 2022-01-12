@@ -17,3 +17,11 @@ print(repr(arr // 2))
 print(repr(arr ** 2))
 #square root each element values
 print(repr(arr ** 0.5))
+
+#convert fahrenheit to celsius with numpy
+def fahrenheit_to_celsius(temp):
+    return (5/9) * (temp - 32)
+
+fahrenheits = np.array([0, 32, 12, -3, 15, 30])
+celsius = fahrenheit_to_celsius(fahrenheits)
+print("celsius: {}".format(repr(celsius)))
