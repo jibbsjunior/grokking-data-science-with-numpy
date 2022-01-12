@@ -27,13 +27,22 @@ celsius = fahrenheit_to_celsius(fahrenheits)
 # print("celsius: {}".format(repr(celsius)))
 
 #non-linear functions
-x = np.array([[1, 2], [3, 4]])
-#raised each x element to the power of e
-print(repr(np.exp(x)))
-#raised each x element to the power of 2
-print(repr(np.exp2(x)))
+# x = np.array([[1, 2], [3, 4]])
+# #raised each x element to the power of e
+# print(repr(np.exp(x)))
+# #raised each x element to the power of 2
+# print(repr(np.exp2(x)))
 
-y = np.array([[2, 3], [np.e, np.pi]])
-#Natural logarithm of y
-print(repr(np.log(y)))
-print(repr(np.power(2, x)))
+# y = np.array([[2, 3], [np.e, np.pi]])
+# #Natural logarithm of y
+# print(repr(np.log(y)))
+# print(repr(np.power(2, x)))
+
+#matrix multiplication
+x = np.array([[1, 2], [3, 4], [5, 6]])
+y = np.array([[2, 4, 5], [7, 8, 9]])
+z = np.array([1, 2, 3])
+m = np.array([3, 4, 5])
+print(repr(np.matmul(z, m)))
+print(repr(np.matmul(x, y)))
+print(repr(np.matmul(x, x)))
