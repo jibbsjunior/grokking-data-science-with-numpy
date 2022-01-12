@@ -44,10 +44,17 @@ from numpy.core.fromnumeric import reshape
 # transposed = np.transpose(arr, axes=(2, 1, 0))
 # print(repr(transposed))
 
-#np.zeros and np.ones
-arr = np.zeros(8)
-arr1 = np.ones((8, 2))
-arr2 = np.ones((4, 2), dtype=np.int32)
-print(repr(arr))
-print(repr(arr1))
-print(repr(arr2))
+#np.zeros and np.ones function
+# arr = np.zeros(8)
+# arr1 = np.ones((8, 2))
+# arr2 = np.ones((4, 2), dtype=np.int32)
+# print(repr(arr))
+# print(repr(arr1))
+# print(repr(arr2))
+
+#np.zeros_like and np.ones_like function
+# arr = np.array([[1, 2], [3, 4]])
+# print(repr(np.zeros_like(arr)))
+
+# arr1 = np.array([[5, 6], [8, 9]])
+# print(repr(np.ones_like(arr1, dtype=np.float32)))
