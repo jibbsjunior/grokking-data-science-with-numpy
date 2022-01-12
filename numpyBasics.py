@@ -58,3 +58,23 @@ from numpy.core.fromnumeric import reshape
 
 # arr1 = np.array([[5, 6], [8, 9]])
 # print(repr(np.ones_like(arr1, dtype=np.float32)))
+
+# Quiz
+#1. Our initial array will just be all the integers from 0 to 11, inclusive. We'll also reshape it so it has three dimensions.
+arr = np.arange(12)
+reshaped = np.reshape(arr, (2, 3, 2))
+print(repr(reshaped))
+
+#2. Next we want to get a flattened version of the reshaped array (the flattened version is equivalent to arr), as well as a transposed version. For the transposed version of reshaped, we use a permutation of (1, 2, 0).
+flattened = reshaped.flatten()
+transposed = np.transpose(reshaped, axes=(1,2,0))
+print(repr(transposed))
+
+# 3. We'll create an array of 5 elements, all of which are 0. We'll also create an array with the same shape as transposed, but containing only 1 as the elements.
+zeros_arr = np.zeros(5)
+ones_arr = np.ones_like(transposed)
+print(repr(ones_arr))
+
+# 4. The final array will contain 101 evenly spaced numbers between -3.5 and 1.5, inclusive. Since they are evenly spaced, the difference between adjacent numbers is 0.05.
+points = np.linspace(-3.5, 1.5, num=101)
+print(repr(points))
