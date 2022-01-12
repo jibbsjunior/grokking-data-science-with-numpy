@@ -39,7 +39,15 @@ from numpy.core.fromnumeric import reshape
 # print(repr(transposed.shape))
 
 #Transpose with the axes argument type
-arr = np.arange(24)
-arr = np.reshape(arr, (3, 4, 2))
-transposed = np.transpose(arr, axes=(2, 1, 0))
-print(repr(transposed))
+# arr = np.arange(24)
+# arr = np.reshape(arr, (3, 4, 2))
+# transposed = np.transpose(arr, axes=(2, 1, 0))
+# print(repr(transposed))
+
+#np.zeros and np.ones
+arr = np.zeros(8)
+arr1 = np.ones((8, 2))
+arr2 = np.ones((4, 2), dtype=np.int32)
+print(repr(arr))
+print(repr(arr1))
+print(repr(arr2))
